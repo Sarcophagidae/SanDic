@@ -158,7 +158,7 @@ void MainWindow::addDock(QWidget* widget, QAction* action, QString title, Qt::Do
 {
     QDockWidget* dock = new QDockWidget(title, this);
 
-    action->setData(reinterpret_cast<int>(dock));
+    action->setData(reinterpret_cast<int &>(dock));
 
     dock->setObjectName(QString("dock%1").arg(docks.count()));
     dock->setWidget(widget);
