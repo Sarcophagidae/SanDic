@@ -17,14 +17,15 @@ SOURCES += main.cpp \
     mainwidget.cpp \
     trans.cpp \
     orderdialog.cpp
-
 HEADERS  += \
     mainwindow.h \
     card.h \
     config.h \
     mainwidget.h \
     trans.h \
-    orderdialog.h
+    orderdialog.h\
+		/usr/include/sqlite3.h
+
 
 FORMS += \
     mainwidget.ui \
@@ -35,3 +36,5 @@ RESOURCES += \
 
 
 RC_FILE = rc/sandic.rc
+
+OBJECTS += /usr/lib64/libsqlite3.so.0
